@@ -42,15 +42,17 @@ section {
 }
 #landing-page img {
     border-radius: 60%;
+    height: 50vh;
+    width: 50vh;
 }
 .hello h1 {
-    font-size: 3em;
+    font-size: 4rem;
 }
 .hello h3 {
-    font-size: 3em;
+    font-size: 4rem;
 }
 .hello p {
-    font-size: 1.5em;
+    font-size: 2rem;
 }
 #personal-info {
     height: 40vh;
@@ -128,6 +130,67 @@ footer a {
 
     margin-top: 1rem;
 }
+@media(max-width:480px) {
+    body {
+        font-size: 8pt;
+    }
+    nav a{
+        font-size: 0.8rem;
+        margin: 0 0.5em;
+    }
+    #pfp {
+        height: 25vh;
+        width: 25vh;
+    }
+    #testimonies {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        color: var(--tertiary-color);
+        justify-content: space-around;
+        background-color: var(--tertiary-color);
+        color: var(--tertiary-color);
+    }
+    .testimony {
+        padding: 1em;
+        background-color: var(--fourth-color);
+        text-align: center;
+        height: 30vh;
+        width: 25vh;
+    }
+    .testimony p {
+        font-size: 1rem;
+    }
+    .comment > h4 {
+        font-size: 1.3rem;
+        margin-bottom: 1em;
+    }
+    .comment > p {
+        font-size: 0.8rem;
+        margin-bottom: 2em;
+    }
+    #skills .skill-set {
+        text-align: center;
+        padding: 1em 0.5em;
+        height: 40vh;
+        width: 30vh;
+        background-color: var(--tertiary-color);
+        color: var(--primary-color);
+        border: 1px solid var(--tertiary-color);
+        border-radius: 10%;
+    }
+    .skill-set > p{
+        margin-top: 1em;
+        font-size: 1rem;
+    }
+    .skill-set > h4 {
+        margin-top: 1.3em;
+        font-size: 1.4rem;
+    }
+    .skill-set > h5 {
+        font-size: 1rem;
+    }
+}
 @media(min-width:481px) and (max-width: 768px) {
     body {
         font-size: 11pt;
@@ -136,11 +199,15 @@ footer a {
         font-size: 0.8rem;
         margin: 0 0.8em;
     }
+    #pfp {
+        height: 40vh;
+        width: 40vh;
+    }
     #testimonies {
         display: flex;
         flex-wrap: wrap;
-        align-items: center
-        color: var(--tertiary-color);;
+        align-items: center;
+        color: var(--tertiary-color);
         justify-content: space-around;
         background-color: var(--tertiary-color);
         color: var(--tertiary-color);
